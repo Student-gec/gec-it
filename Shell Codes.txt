@@ -1,0 +1,35 @@
+Factorial
+echo " enter num"
+read num
+fact=1
+for((i=1;i<num;i++)); do
+	fact=$(($fact*$i))
+done
+echo "factorial is $fact"
+
+
+
+Fibonacci
+echo" enter number "
+read num
+x=0
+y=1
+echo " series of $num is :"
+for((i=0;i<=num;i++)); do
+	z=$((x+y))
+	echo -n $x
+	x=$y
+	y=$z
+done
+
+reverse
+echo "enter num"
+read num
+rev=0
+while["$num"!="0"]; do
+n=$(($num%10))
+rev=$((($rev*10)+$n))
+num=$(($num/10))
+done
+
+echo "reverse is $rev"
